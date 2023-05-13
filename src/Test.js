@@ -55,10 +55,10 @@ const Test = () => {
           <tr>
             <th>#</th>
             <th>Image</th>
-            <th>email</th>
-            <th>birthdate</th>
-            <th>registeredAt</th>
-            <th>userId</th>
+            <th>Email</th>
+            <th>BirthDate</th>
+            <th>Registered At</th>
+            <th>User Id</th>
             <th>username</th>
           </tr>
         </thead>

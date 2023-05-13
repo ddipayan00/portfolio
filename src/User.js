@@ -13,7 +13,7 @@ const User = () => {
         Go to Home Page
         </Button>
         <br/><br/>
-        <a className="btn text-white" style={{backgroundColor: "#333333"}} href="/user/" role="button">
+        <a className="btn text-white" style={{backgroundColor: "#333333"}} target="https://github.com/ddipayan00" href="https://github.com/ddipayan00" role="button">
           <i className="fab fa-github"></i>
           Github
         </a>
