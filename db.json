@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Sachin",
+      "lastName": "Tendulkar",
+      "age": 45
+    },
+    {
+      "id": 2,
+      "firstName": "Alastair",
+      "lastName": "Cook",
+      "age": 37
+    },
+    {
+      "id": 3,
+      "firstName": "Steve",
+      "lastName": "Smith",
+      "age": 32
+    }
+  ]
+}

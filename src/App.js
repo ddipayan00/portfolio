@@ -1,9 +1,20 @@
 import './App.css';
+import Test from "./Test";
+import User from "./User";
+import Home from "./Home";
+import UserProfile from "./UserProfile";
+import { Routes, Route } from "react-router-dom";
+
 
 const App = () => {
   return (
     <div className="App">
-      Main App
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/user" element={<User />} />
+          <Route path="/user/:id" element={<UserProfile />} />
+          <Route path="/test" element={<Test/>} />
+        </Routes>
     </div>
   );
 }
