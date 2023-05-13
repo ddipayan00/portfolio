@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import { useNavigate  } from "react-router-dom";
 
-
 function createRandomUser() {
   return {
     userId: faker.string.uuid(),
@@ -19,7 +18,7 @@ function createRandomUser() {
 }
 
 const createUser = () => {
-  console.log("FAKE API CALLED")
+  console.log("FAKE API CALLED...")
   return faker.helpers.multiple(createRandomUser, {
     count: 50,
   })
@@ -68,7 +67,9 @@ const Test = () => {
                 return (
                   <tr key={id}>
                     <td>{id+1}</td>
-                    <td><Image width="100px" height="100px" alt="" src={data.avatar}  roundedCircle /></td>
+                    <td>
+                      <Image width="100px" height="100px" alt="" src={data.avatar} rounded fluid  />
+                    </td>
                     <td>{data.email}</td>
                     <td>{data.birthdate.toDateString()}</td>
                     <td>{data.registeredAt.toDateString()}</td>
