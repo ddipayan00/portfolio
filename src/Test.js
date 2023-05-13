@@ -32,8 +32,8 @@ const isBrowserDefaultDark = () => window.matchMedia('(prefers-color-scheme: dar
 
 
 const Test = () => {
-  const [USERS, setUSERS] = useState([])
-  const [Flag, setFlag] = useState(false)
+  const [USERS, setUSERS] = useState([]);
+  const [Flag, setFlag] = useState(false);
   let navigate = useNavigate();
   
   useEffect(() => {

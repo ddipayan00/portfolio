@@ -3,22 +3,23 @@ import { useNavigate  } from "react-router-dom";
 import { Button } from 'react-bootstrap';
 
 const User = () => {
-  let navigate = useNavigate();
-    return (
-      <div className="User">
-        <br/>
-        User
-        <br/><br/>
-        <Button variant="success" onClick={(e) => {e.preventDefault(); navigate("/");}}>
-        Go to Home Page
-        </Button>
-        <br/><br/>
-        <a className="btn text-white" style={{backgroundColor: "#333333"}} target="https://github.com/ddipayan00" href="https://github.com/ddipayan00" role="button">
-          <i className="fab fa-github"></i>
-          Github
-        </a>
-      </div>
-    );
-  }
+  let navigate = useNavigate(); 
+
+  return (
+    <div className="User">
+      <br/>
+      User
+      <br/><br/>
+      <Button variant="success" onClick={(e) => {e.preventDefault(); navigate("/");}}>
+      Go to Home Page
+      </Button>
+      <br/><br/>
+      <a className="btn text-white" style={{backgroundColor: "#333333"}} target="https://github.com/ddipayan00" href="https://github.com/ddipayan00" role="button">
+        <i className="fab fa-github"></i>
+        Github
+      </a>
+    </div>
+  );
+}
   
 export default User;
