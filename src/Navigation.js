@@ -16,6 +16,9 @@ function NavBar() {
       <Nav.Item>
         <Nav.Link href="/user">User</Nav.Link>
       </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/extra">Extra</Nav.Link>
+      </Nav.Item>
     </Nav>
   );
 }

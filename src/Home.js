@@ -20,6 +20,10 @@ const Home = () => {
       <Button variant="dark" onClick={(e) => {e.preventDefault(); navigate("/navigation");}}>
           Go to Navigation Page
       </Button>
+      <br/><br/>
+      <Button variant="warning" onClick={(e) => {e.preventDefault(); navigate("/extra");}}>
+          Go to ExtraTest Page
+      </Button>
     </div>
   );
 }
