@@ -9,7 +9,7 @@ const Home = () => {
       <br/> 
       {/* Have to learn grid flex box and css properly */}
       Home <br/><br/>
-      <Button variant="primary" onClick={(e) => {e.preventDefault(); navigate("/user");}}>
+      <Button className="userClass" variant="primary" onClick={(e) => {e.preventDefault(); navigate("/user");}}>
           Go to User Page
       </Button>
       <br/><br/>

@@ -4,20 +4,32 @@ import { Button } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 
 
-function NavBar() {
+function NavBar({navigate}) {
   return (
-    <Nav justify variant="tabs" >
+    <Nav justify variant="tabs" className='navBar' >
       <Nav.Item>
-        <Nav.Link href="/">Home</Nav.Link>
+        {/* <Button variant="success" onClick={(e) => {e.preventDefault(); navigate("/");}}>
+          Home
+        </Button> */}
+        <Nav.Link className="navBarItem" onClick={(e) => {e.preventDefault(); navigate("/");}}>Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/test">Test</Nav.Link>
+        {/* <Button variant="danger" onClick={(e) => {e.preventDefault(); navigate("/test");}}>
+          Test
+        </Button> */}
+        <Nav.Link className="navBarItem" onClick={(e) => {e.preventDefault(); navigate("/test");}}>Test</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/user">User</Nav.Link>
+        {/* <Button variant="primary" onClick={(e) => {e.preventDefault(); navigate("/user");}}>
+          User
+        </Button> */}
+        <Nav.Link className="navBarItem" onClick={(e) => {e.preventDefault(); navigate("/user");}}>User</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/extra">Extra</Nav.Link>
+        {/* <Button variant="warning" onClick={(e) => {e.preventDefault(); navigate("/extra");}}>
+          Extra
+        </Button> */}
+        <Nav.Link className="navBarItem" onClick={(e) => {e.preventDefault(); navigate("/extra");}}>Extra</Nav.Link>
       </Nav.Item>
     </Nav>
   );
@@ -31,7 +43,7 @@ const Navigation = () => {
 
   return (
     <div className="Navigation">
-      <NavBar />
+      <NavBar navigate={navigate} />
       <br/>
         Navigation
       <br/><br/>
